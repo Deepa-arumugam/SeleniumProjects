@@ -23,6 +23,7 @@ public class DataTableWithHeader {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.get("https://www.calculator.net/");
+		System.out.println("In calculator website");
 	}
 
 	@When("^you enteres input values$")
