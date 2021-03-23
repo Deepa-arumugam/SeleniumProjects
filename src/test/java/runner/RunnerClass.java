@@ -8,7 +8,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "FeatureFiles/demoDataTable.feature",
 	glue = "stepDefinitions",
-	monochrome = true
+	monochrome = true,
+        format = {"json:target/cucumber.json"}
 	)
 public class RunnerClass {
 	
